@@ -1,0 +1,12 @@
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    max-width: 456px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
