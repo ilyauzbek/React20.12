@@ -1,12 +1,11 @@
-import React, { children } from 'react'
+import React from 'react'
 import s from './Button.module.scss'
 
-const Button = ({ Children }) => {
+const Button = ({ children }) => {
   return (
-   <>
-   
-   <button className={s.btn}>{children}</button>
-   </>
+    <>
+      <button className={s.btn}>{children}</button>
+    </>
   )
 }
 

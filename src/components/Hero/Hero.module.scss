@@ -1,12 +1,88 @@
-.wrap{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 136px;
+  margin-bottom: 103px;
+  gap: 314px;
+ 
 }
 
-.box{
-    max-width: 456px;
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px); // Поднимаем весь блок при наведении
+  }
+
+  h1 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 56.07px;
+    white-space: nowrap;
+    color: white;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #c0b7e8; // Изменяем цвет заголовка при наведении
+    }
+  }
+
+  span {
+    background: linear-gradient(269deg, #c0b7e8 -3.72%, #8176af 82.17%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: linear-gradient(269deg, #ffffff -3.72%, #ffffff 82.17%);
+      background-clip: text; // Инвертируем градиент
+    }
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    color: white;
+    margin-bottom: 66px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #c0b7e8; // Изменяем цвет текста при наведении
+    }
+  }
+}
+
+.bi {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+
+  img{
+
+    &:hover {
+      transform: scale(1.22); // Увеличиваем весь контейнер при наведении
+    }
+  }
+
+  &:hover {
+    transform: scale(1.05); // Увеличиваем элемент при наведении
+  }
+}
+
+.mask {
+  width: 524px;
+  height: 455px;
+  border: 20px solid rgba(0, 0, 0, 0.13);
+  border-radius: 126px 126px 145px 299px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1); // Увеличиваем изображение при наведении
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); // Добавляем тень
+  }
 }

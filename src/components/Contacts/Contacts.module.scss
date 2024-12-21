@@ -1,0 +1,83 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1272px;
+  height: 167px;
+  border-radius: 90px;
+  background: radial-gradient(
+    50% 2900.76% at 50% 53.89%, 
+    rgba(58, 52, 86, 0.95) 0%, 
+    #211e2e 100%
+  );
+  transition: background 0.5s ease, transform 0.5s ease;
+
+  &:hover {
+    background: radial-gradient(
+      50% 2900.76% at 50% 53.89%, 
+      rgba(58, 52, 86, 1) 0%, 
+      #4a2b5d 100% // меняем градиент при наведении
+    );
+    transform: scale(1.05); // увеличение элемента при наведении
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.pay {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.card {
+  padding: 20px 42px 20px 42px;
+  border-right: 1px solid rgba(192, 183, 232, 0.33);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px); // карточка поднимется вверх
+    box-shadow: 0px 4px 15px rgba(192, 183, 232, 0.5); // добавляем тень при наведении
+  }
+}
+
+.card3 {
+  border: none;
+  padding: 20px 42px 20px 42px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px); // поднятие карточки
+    box-shadow: 0px 4px 15px rgba(192, 183, 232, 0.5); // тень при наведении
+  }
+}
+
+.text {
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.26px;
+    color: white;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #c0b7e8; // цвет заголовка меняется при наведении
+    }
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    color: white;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #8176af; // цвет текста меняется при наведении
+    }
+  }
+}
