@@ -1,0 +1,39 @@
+.wrap{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    place-items: center;
+
+    margin: 100px 0;
+}
+
+.level{
+    background-image: url(/lines.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.card{
+    color: white;
+
+    p{
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    h2{
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 50%;
+        color: white;
+        background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+        outline: 17px solid rgba(0, 0, 0, 0.303);
+        font-size: 64px;
+        color: black;
+    }
+}

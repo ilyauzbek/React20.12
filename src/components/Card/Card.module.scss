@@ -1,0 +1,36 @@
+.imag {
+  border-radius: 50%;
+  border: 10px solid rgba(0, 0, 0, 0.13);
+  margin: 25px 41px 21px 41px;
+}
+.hh {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.26px;
+  border-bottom: 1px solid #C0B7E854;
+  padding-bottom: 21px;
+  margin-bottom: 17px;
+  color: white;
+  text-align: center;
+}
+
+.card {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding-bottom: 25px;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  background: radial-gradient(50% 50% at 50% 50%, #433d60 0%, #211e2e 100%);
+}
+.pp {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.63px;
+  color: white;
+  margin: 13px 35px 35px 25px;
+ 
+}
+
+
