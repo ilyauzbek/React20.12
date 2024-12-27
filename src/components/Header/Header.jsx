@@ -1,10 +1,24 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import s from './Header.module.scss';
 import Button from '../Button/Button';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Modal from '../Modal/Modal';
 
 const Header = () => {
+
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen)
+
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false)
+  }
+
+
   useEffect(() => {
     AOS.init({ duration: 2000 });  // инициализация с продолжительностью анимации 1000ms
   }, []);
@@ -27,12 +41,14 @@ const Header = () => {
             </div>
 
             <div className={s.btns} data-aos="fade-left">
-              <button className={s.btn}>CONTACT US</button>
+              <button onClick={toggleModal} className={s.btn}>CONTACT US</button>
               <Button>JOIN HYDRA</Button>
             </div>
           </nav>
         </div>
       </header>
+
+      <Modal isModalOpen={isModalOpen}  onClose={closeModal}/>
     </>
   );
 }

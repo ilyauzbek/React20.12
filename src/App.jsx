@@ -9,14 +9,19 @@ import WhyB from './components/WhyB/WhyB'
 import Tarifs from './components/Tarifs/Tarifs'
 import Hardware from './components/Hardware/Hardware'
 import Level from './components/Level/Level'
+import Join from './components/Join/Join'
+import Manka from './components/Manka/Manka'
+
 
 
 const App = () => {
   return (
     <>
+   
     <Header/>
     <Hero/>
     <Contacts/>
+    <Manka/>
     <Introdiction/>
     <About/>
     <WhyB/>
@@ -24,6 +29,7 @@ const App = () => {
     <Hardware/>
     <Introdiction/>
     <Level/>
+    <Join/>
     </>
   )
 }
